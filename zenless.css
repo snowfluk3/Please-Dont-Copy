@@ -1,0 +1,895 @@
+body {
+    font-family: zenless;
+    overflow-x: hidden;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+@font-face {
+    font-family: zenless;
+    src: url(印品鸿蒙体/印品鸿蒙体.ttf);
+}
+@font-face {
+    font-family: zenless2;
+    src: url(dinpro-bold-cdnfonts/DINPro-Bold_13934.ttf);
+}
+
+@media {
+    width: 100%;
+}
+.intro-deco6 {
+    position: absolute;
+    z-index: -2;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.deco1 {
+    position: absolute;
+    z-index: -1;
+    width: 102%;
+    left: 0;
+    margin-top: 30%;
+}
+.deco2 {
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    right: -14%;
+}
+.deco3 {
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    right: -11%;    
+}
+.deco4 {
+    position: absolute;
+    margin-top: 6%;
+    left: 0;
+    background-color: black;
+    width: 110%;
+    height: 4%;
+}
+.deco5 {
+    position: absolute;
+    z-index: -1;
+    background-image: url('zenless-deco\(5\).png');
+    background-size: cover;
+    left: 0;
+    width: 100%;
+    height: 13%;
+}
+.one {
+    position: absolute;
+    left: 100%;
+    object-fit: cover;
+}
+.deco6 {
+    position: absolute;
+    right: 0;
+    margin-top: -95%;
+}
+.deco7 {
+    position: absolute;
+    z-index: -1;
+    width: 80%;
+    margin-top: -86.5%;
+}
+.deco8 {
+    position: absolute;
+    z-index: -3;
+    width: 100%;
+    margin-top: -183%;
+}
+/* Links */
+.intro-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+.intro img {
+    width: 60%;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 1rem;
+    margin-left: 10%;
+    transform: skew(-10deg);
+    transition: 0.3s ease-out;
+}
+.intro a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    text-align: right;
+}
+.intro img:hover {
+    cursor: pointer;
+    transform: scale(1.04) skew(-10deg);
+}
+.intro-deco1 {
+    position: absolute;
+    z-index: -1;
+    width: 20%;
+    height: 60%;
+    background-image: url('black-background.jpg');
+    background-size: cover;
+    border-radius: 40px;
+    left: -5%;
+    top: -4%;
+    transform: skew(-20deg);
+}
+.intro-deco7 {
+    position: absolute;
+    width: 20%;
+    height: 15%;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 15%;
+    margin-left: 12%;
+    color: white;
+    font-family: zenless2;
+    transform: skew(-18deg);
+}
+.intro-deco7::after {
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 103.5%;
+    border-left: 12px double white;
+    border-right: 12px double white;
+    margin-top: -49%;
+    margin-left: 10%;
+}
+.intro-deco7 h2 {
+    margin-left: 60%;
+    margin-top: 1%;
+    font-size: 30px;
+    transform: skew(18deg);
+}
+.intro-deco7 p {
+    margin-left: 64%;
+    margin-top: -13%;
+    font-size: 50px;
+    transform: skew(18deg);
+}
+.home {
+    position: absolute;
+    left: 7%;
+    top: 25%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: black;
+    width: 12%;
+    padding: 0.5rem;
+    transform: skew(-15deg);
+    transition: 0.3s ease-out;
+}
+.home::before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 105%;
+    border-left: 15px double white;
+    border-right: 15px double white;
+    margin-left: -60%;
+    margin-top: -5%;
+    transform: skew(-15deg);
+}
+.home::after {
+    content: "";
+    position: absolute;
+    width: 100.5%;
+    height: 10%;
+    background-color: #d8fa00;
+    border: 2px solid #d8fa00;
+    border-radius: 10px;
+    margin-left: -97%;
+    margin-top: 14%;
+    transform: skew(-15deg);
+}
+.about {
+    position: absolute;
+    left: 6%;
+    top: 36%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: black;
+    width: 12%;
+    padding: 0.5rem;   
+    transform: skew(-15deg); 
+    transition: 0.3s ease-out;
+}
+.about::after {
+    content: "";
+    position: absolute;
+    width: 100.5%;
+    height: 10%;
+    background-color: #d8fa00;
+    border: 2px solid #d8fa00;
+    border-radius: 10px;
+    margin-left: -97%;
+    margin-top: 14%;
+    transform: skew(-15deg);  
+}
+.about::before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 105%;
+    border-left: 15px double white;
+    border-right: 15px double white;
+    margin-left: -60%;
+    margin-top: -5%;
+    transform: skew(-15deg);  
+}
+.home:hover, .about:hover {
+    transform: skew(-15deg) scale(1.06);
+}
+/* Content */
+.intro-deco2 {
+    width: 140%;
+    height: 190%;
+    background-image: url('black-background\(2\).avif');
+    background-size: cover;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-top: -30%;
+}
+.content h1 {
+    position: absolute;
+    font-size: 32px;
+    margin-top: -8%;
+    margin-left: 16%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+}
+.content::after {
+    content: "";
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: black;
+    width: 11.5%;
+    height: 10%;
+    margin-left: 16%;
+    margin-top: -12.5%;
+}
+.content li::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #d8fa00;
+    border-radius: 10px;
+    background-color: #d8fa00;
+    width: 4%;
+    height: 95%;
+    margin-left: 18%;
+    margin-top: -30%;   
+}
+.content ul {
+    position: absolute;
+    margin-left: 4%;
+    margin-top: 1%;
+    list-style: none;
+}
+.content li  {
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    margin-top: 60%;
+    transform: skew(-12deg);
+    transition: 0.3s ease-in;
+}
+.content li:hover {
+    transform: scale(1.06) skew(-12deg);
+}
+.content a {
+    text-decoration: none;
+    color: white;
+}
+
+.list-content {
+    position: absolute;
+    display: none;
+    z-index: -2;
+    color: white;
+    font-size: 12px;
+    width: 300%;
+    background-image: url('black-background\(2\).avif');
+    background-size: cover;
+    border-radius: 6px 10px 0 6px;
+    margin-top: -58%;
+    margin-left: -1%;
+    transform: skew(-12deg);
+    transform-origin: 10% 10%;
+    
+    animation: 0.3s ease-out slideRight;
+    animation-fill-mode: forwards;
+}
+.list-content::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 15%;
+    height: 100%;
+    border-left: 10px double white;
+    border-right: 10px double white;
+    margin-left: 70%;
+    transform: skew(-12deg);
+}
+.list-content::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 98.8%;
+    height: 3%;
+    border: 2px solid #d8fa00;
+    border-radius: 6px 10px 0 6px;
+    background-color: #d8fa00;
+    margin-top: -2%;
+}
+.content li:hover + .list-content {
+    display: block;
+}
+.list-content p {
+    margin-left: 4%;
+}
+@keyframes slideRight{
+    0% {
+        transform: translateX(0) skew(-12deg);
+        opacity: 0;
+    }
+    20% {
+        transform: translateX(10%) skew(-12deg);
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateX(20%) skew(-12deg);
+        opacity: 1;
+    }
+}
+/* Other Games */
+.games {
+    width: 60%;
+    height: 300%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-image: url('black-background.jpg');
+    background-image: cover;
+    margin-left: 80%;
+    margin-top: -5%;
+    transform: skew(14deg);
+}
+.games::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 45%;
+    border: 3px solid black;
+    border-radius: 80px 10px 10px 120px;
+    background-color: #d8fa00;
+    margin-top: 100%;
+    margin-left: -40%;
+}
+.intro-deco3 {
+    position: absolute;
+    z-index: -2;
+    width: 50%;
+    top: 0;
+}
+
+.intro-deco4 a {
+    text-decoration: none;
+    width: 16%;
+    border: 2px solid black;
+    border-radius: 10px 10px 0 0;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    transform: skew(8deg);
+    transition: 0.3s ease-out;
+}
+.intro-deco4 a::before {
+    content: "";
+    position: absolute;
+    height: 105%;
+    width: 9%;
+    border-left: 10px double white;
+    border-right: 10px double white;
+    margin-top: -3.5%;
+    margin-left: 70%;
+}
+.intro-deco4 a::after {
+    content: "";
+    position: absolute;
+    height: 7%;
+    width: 104%;
+    border: 2px solid #d8fa00;
+    border-radius: 50px;
+    background-color: #d8fa00;
+    margin-left: -64.5%;
+    margin-top: 11%;
+}
+.intro-deco4 a:hover {
+    cursor: pointer;
+    transform: skew(8deg) scale(1.04);
+}
+.genshin {
+    position: absolute;
+    margin-top: -22%;
+    margin-left: 12%;
+}
+.honkai {
+    position: absolute;
+    margin-top: -16%;
+    margin-left: 14%;
+}
+.ganyu {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    width: 25%;
+    margin-left: -20%;
+}
+.himeko {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    width: 20%;
+    margin-left: 85%;
+    margin-top: 4%;
+}
+.intro-deco4:hover + .intro-deco5 {
+    display: block;
+}
+.intro-deco5 {
+    position: absolute;
+    display: none;
+    z-index: -2;
+    width: 28%;
+    margin-left: -22%;
+    margin-top: -15%;
+    border: 3px solid black;
+    border-radius: 10px;
+
+    animation: 0.3s ease-out slideIn;
+    animation-fill-mode: forwards;
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    20% {
+        transform: translateX(10%);
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateX(20%);
+        opacity: 1;
+    }
+}
+/* Agents */
+.agent-section {
+    margin-top: 41%;
+}
+.agent-bar {    
+    position: absolute;
+    width: 34.3%;
+}
+.agent-select {
+    position: absolute;
+    width: 83%;
+    margin-left: 20%;
+}
+.agent-content {
+    font-family: zenless2;
+    font-weight: bolder;
+    color: #363434;
+}
+.agent-content h2 {
+    position: absolute;
+    font-size: 38px;
+    margin-left: 14%;
+}
+.agent-content p {
+    position: absolute;
+    font-size: 94px;
+    margin-left: 14%;
+    margin-top: 3.5%;
+}
+/* Agent Images */
+.agent-images {
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    left: 25%;
+    margin-top: -15.3%;
+    transform-origin: top center;
+}
+.agent-images img {
+    width: 90%;
+    animation: 0.4s ease-out agentSlide;
+    animation-fill-mode: forwards;
+}
+.agent-images h2 {
+    display: none;
+    margin-top: -9%;
+    margin-left: -5%;
+    animation: 0.4s ease-out agentSlide;
+    animation-fill-mode: forwards;
+}
+.agent-images p {
+    display: none;
+    margin-top: -1.5%;
+    margin-left: -5%;
+    animation: 0.4s ease-out agentSlide;
+    animation-fill-mode: forwards;
+}
+.agent-images .agent-icon {
+    display: none;
+    position: absolute;
+    margin-top: -50%;
+    margin-left: 10%;
+    width: 22%;
+}
+@keyframes agentSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    20% {
+        opacity: 0.6;
+        transform: translateX(2.5%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(5%);
+    }
+}
+
+/* Zhu Yuan */
+.zhu-yuan {
+   display: none; 
+}
+.zhu {
+    position: absolute;
+    cursor: pointer;
+    width: 6%;
+    left: 90%;
+    margin-top: 0.5%;
+    background-image: url('zenless-deco\(3\).png');
+    background-size: cover;
+    background-color: #d8fa00;
+    border: 2px solid black;
+    border-bottom: 3px solid #d8fa00; 
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+}
+.zhu:hover {
+    transform: scale(1.04);
+}
+.zhu:hover + .agent-images img, .zhu:hover + .agent-images h2,
+.zhu:hover + .agent-images p {
+    display: block;
+}
+/* Grace Howard */
+.grace {
+    display: none;
+}
+.grace2 {
+    position: absolute;
+    cursor: pointer;
+    width: 6%;
+    left: 90%;
+    margin-top: 6%;
+    background-image: url('zenless-deco\(3\).png');
+    background-size: cover;
+    background-color: #d8fa00;
+    border: 2px solid black;
+    border-bottom: 3px solid #d8fa00; 
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+}
+.grace2:hover {
+    transform: scale(1.04);
+}
+.grace2:hover + .agent-images img, .grace2:hover + .agent-images h2,
+.grace2:hover + .agent-images p {
+    display: block;
+}
+/* Ellen Joe */
+.ellen {
+    display: none;    
+}
+.ellen2 {
+    position: absolute;
+    cursor: pointer;
+    width: 6%;
+    left: 90%;
+    margin-top: 11.5%;
+    background-image: url('zenless-deco\(3\).png');
+    background-size: cover;
+    background-color: #d8fa00;
+    border: 2px solid black;
+    border-bottom: 3px solid #d8fa00; 
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+}
+.ellen2:hover {
+    transform: scale(1.04);
+}
+.ellen2:hover + .agent-images img, .ellen2:hover + .agent-images h2,
+.ellen2:hover + .agent-images p {
+    display: block;
+}
+/* Burnice White */
+.burnice {
+    display: none;    
+}
+.burnice2 {
+    position: absolute;
+    cursor: pointer;
+    width: 6%;
+    left: 90%;
+    margin-top: 17%;
+    background-image: url('zenless-deco\(3\).png');
+    background-size: cover;
+    background-color: #d8fa00;
+    border: 2px solid black;
+    border-bottom: 3px solid #d8fa00; 
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+}
+.burnice2:hover {
+    transform: scale(1.04);
+}
+.burnice2:hover + .agent-images img, .burnice2:hover + .agent-images h2,
+.burnice2:hover + .agent-images p {
+    display: block;
+}
+/* Billy Kid */
+.billy {
+    display: none;    
+}
+.billy2 {
+    position: absolute;
+    cursor: pointer;
+    width: 6%;
+    left: 90%;
+    margin-top: 22.5%;
+    background-image: url('zenless-deco\(3\).png');
+    background-color: #d8fa00;
+    background-size: cover;
+    border: 2px solid black;
+    border-bottom: 3px solid #d8fa00; 
+    border-radius: 10px; 
+    transition: 0.3s ease-out;
+}
+.billy2:hover {
+    transform: scale(1.04);
+}
+.billy2:hover + .agent-images img, .billy2:hover + .agent-images h2,
+.billy2:hover + .agent-images p {
+    display: block;
+}
+/* Gameplay */
+.game {
+    position: absolute;
+    width: 15%;
+    height: 25%;
+    margin-top: 50%;
+    margin-left: 55%;
+    border: 2px solid #d8fa00;
+    border-radius: 10px 80px 10px 80px;
+    background-color: #d8fa00;
+    font-family: zenless2;
+    color: #363434;
+
+    transform: skew(-42deg);
+}
+.game h2 {
+    font-size: 30px;
+    margin-left: 8%;
+    transform: skew(42deg);
+}
+.game p {
+    font-size: 90px;
+    margin-left: 25%;
+    margin-top: -24%;
+    transform: skew(42deg);
+}
+.gameplay {
+    margin-top: 91%;
+    margin-left: 8%;
+}
+.gameplay iframe {
+    pointer-events: none;
+    border-radius: 50px;
+}
+.gameplay p {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: black;
+    width: 50%;
+    padding: 0.8rem;
+}
+/* Character Stories */
+.stories {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 60px;
+    margin-top: 10%;
+    margin-left: 8%;
+}
+.stories h1 {
+    padding: 0.8rem;
+    margin-left: 2%;
+    border: 3px solid #d8fa00;
+    border-radius: 20px;
+    background-color: #d8fa00;
+    width: 50%;
+}
+.buttons {
+    font-family: zenless;
+    cursor: pointer;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 10px 0 0 10px;
+    color: white;
+    padding: 30px 6px;
+    
+    transition: 0.3s ease-out;
+}
+.buttons:hover {
+    background-color: #2e2c2c;
+    border: 2px solid #2e2c2c;
+    border-right: 2px solid black;
+}
+.buttons:hover + .story-content {
+    display: block;
+}
+.story-content {
+    position: absolute;
+    display: none;
+    pointer-events: none;
+    border: 2px solid black;
+    border-radius: 0 20px 20px 0;
+    background-color: black;
+    margin-left: 1.5%;
+    margin-top: -3.59%;
+    width: 50%;
+
+    animation: 0.3s ease-out scaleOut forwards;
+    transform-origin: left;
+}
+.story-content::after {
+    content: "";
+    position: absolute;
+    width: 0.5%;
+    height: 107%;
+    border: none;
+    background-color: #d8fa00;
+    margin-left: 40%;
+    margin-top: -0.5%;
+    transform: skew(-12deg);
+}
+.story-content img {
+    width: 27.4%;
+    background-image: url('zenless-deco\(3\).png');
+    background-size: cover;
+    border-top: 2px solid #d8fa00;
+    border-left: 4px solid #d8fa00;
+    border-radius: 10px;
+}
+.story-content h2 {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    margin-left: 32%;
+    margin-top: -11%;
+    text-shadow: 2px 1px 1px #d8fa00;
+}
+.story-content h3 {
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    margin-left: 32%;
+    margin-top: -4%;
+}
+@keyframes scaleOut {
+    0% {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+    20% {
+        transform: scaleX(40%);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scalex(100%);
+        opacity: 1;
+    }
+}
+
+.vertical {
+    position: absolute;
+    width: 0.5%;
+    height: 104%;
+    border: none; 
+    background-color: #d8fa00;
+    margin-left: 30%;
+    margin-top: -11.2%;
+
+    transform: skew(-12deg);
+}
+.story-icon img {
+    position: absolute;
+    width: 6%;
+    border: 2px solid #d8fa00;
+    background-image: none;
+    margin-left: 30%;
+    margin-top: 4%;
+}
+.story-deco {
+    position: absolute;
+    height: 100%;
+    width: 31%;
+    background-image: url('black-background\(2\).avif');
+    background-size: cover;
+    border-radius: 20px;
+    margin-left: 70%;
+    margin-top: -11%;
+}
+.story-deco::after {
+    content: "";
+    position: absolute;
+    height: 104%;
+    width: 8%;
+    background-color: white;
+    border: 2px solid white;
+    margin-left: -5.2%;
+    margin-top: -0.8%;
+    transform: skew(-12deg);
+}
+.story-deco2 {
+    position: absolute;
+    width: 15%;
+    height: 25%;
+    margin-left: 60%;
+    border: 2px solid #d8fa00;
+    border-radius: 20px 60px 20px 60px;
+    background-color: #d8fa00;
+    font-family: zenless2;
+    color: #363434;
+    transform: skew(-12deg);
+}
+.story-deco2 h2 {
+    position: absolute;
+    color: #363434;
+    font-size: 30px;
+    margin-left: 4%;
+    transform: skew(12deg);
+}
+.story-deco2 p {
+    position: absolute;
+    color: #363434;
+    font-size: 98px;
+    margin-left: 20%;
+    margin-top: 20%;
+    transform: skew(12deg);
+}
